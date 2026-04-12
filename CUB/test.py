@@ -7,6 +7,7 @@ CUB-200-2011 测试代码 - 高级指标评估
 
 import torch
 import torch.nn as nn
+import torchvision
 from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
 from sklearn.metrics import (
@@ -45,8 +46,9 @@ test_transform = transforms.Compose([
 
 # 注意：请将你的 CUB-200-2011 测试集整理成 ImageFolder 格式
 test_dataset = torchvision.datasets.ImageFolder(
-    root='data/CUB_200_2011/test', 
-    transform=test_transform
+    root='../data/CUB_200_2011/test',
+    transform=test_transform,
+    download=True
 )
 
 test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=4, pin_memory=True)
