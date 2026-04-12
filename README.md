@@ -72,8 +72,8 @@ project/
 ├── mlp_classifier+3auto_encoder+mnist/         # 阶段二：MLP 分类器，在 MNIST 数据集上训练 + 测试
 ├── transformer_classifier+3auto_encoder+mnist/ # 阶段二：Transformer 分类器，在 MNIST 数据集上训练 + 测试
 ├── cvae_transformer/                           # 阶段二最优搭配：CVAE 编码器 + Transformer 分类器，在 FashionMNIST 数据集上训练 + 测试
-├── cvae_transformer-attn/                      # 在原本 cvae_transformer 的基础上加上注意力机制
-├── CUB/                                        # 使用 cvae_transformer-attn 在 CUB 数据集上测试
+├── cvae_transformer-attn/                      # 阶段三：在原本 cvae_transformer 的基础上加上注意力机制
+├── CUB/                                        # 阶段三：使用 cvae_transformer-attn 在 CUB 数据集上测试
 └── README.md                                   # 项目说明文档
 ```
 
