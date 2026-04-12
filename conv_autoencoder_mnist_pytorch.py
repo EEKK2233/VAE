@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-MNIST 卷积自编码器 (ConvAE) —— PyTorch 版
+MNIST 卷积自编码器 (ConvAE) —— PyTorch 版 + 模型保存
 """
 
 import numpy as np
@@ -12,18 +12,20 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 import torchvision
 import torchvision.transforms as transforms
+import os
 
 torch.manual_seed(42)
 np.random.seed(42)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"✅ 使用设备: {device}")
 
-# ===================== 参数 =====================
+# ===================== 参数设置 =====================
 BATCH_SIZE = 128
 EPOCHS = 30
 LEARNING_RATE = 0.001
 LATENT_DIM = 64
 
+MODEL_PATH = "conv_autoencoder_mnist.pth"   # 模型保存路径
 
 # ===================== 数据 =====================
 transform = transforms.Compose([transforms.ToTensor()])
@@ -35,16 +37,14 @@ train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
 
 
-# ===================== 模型 =====================
+# ===================== 模型定义 =====================
 class ConvAutoEncoder(nn.Module):
     def __init__(self):
         super().__init__()
         # 编码器
         self.encoder = nn.Sequential(
-            nn.Conv2d(1, 32, kernel_size=3, stride=2, padding=1),   # 14x14
-            nn.ReLU(),
-            nn.Conv2d(32, 64, kernel_size=3, stride=2, padding=1),  # 7x7
-            nn.ReLU(),
+            nn.Conv2d(1, 32, kernel_size=3, stride=2, padding=1), nn.ReLU(),
+            nn.Conv2d(32, 64, kernel_size=3, stride=2, padding=1), nn.ReLU(),
             nn.Flatten(),
             nn.Linear(64 * 7 * 7, LATENT_DIM),
             nn.ReLU()
@@ -54,8 +54,7 @@ class ConvAutoEncoder(nn.Module):
             nn.Linear(LATENT_DIM, 64 * 7 * 7),
             nn.ReLU(),
             nn.Unflatten(1, (64, 7, 7)),
-            nn.ConvTranspose2d(64, 32, kernel_size=3, stride=2, padding=1, output_padding=1),
-            nn.ReLU(),
+            nn.ConvTranspose2d(64, 32, kernel_size=3, stride=2, padding=1, output_padding=1), nn.ReLU(),
             nn.ConvTranspose2d(32, 1, kernel_size=3, stride=2, padding=1, output_padding=1),
             nn.Sigmoid()
         )
@@ -69,7 +68,7 @@ class ConvAutoEncoder(nn.Module):
         return self.encoder
 
 
-# ===================== 可视化 =====================
+# ===================== 可视化函数 =====================
 def plot_reconstructions(model, test_loader, n=10):
     model.eval()
     with torch.no_grad():
@@ -105,7 +104,7 @@ def plot_latent_space(encoder, test_loader):
     
     plt.figure(figsize=(12, 10))
     scatter = plt.scatter(z[:, 0], z[:, 1], c=labels, cmap='tab10', alpha=0.6, s=8)
-    plt.colorbar(scatter, label="数字类别")
+    plt.colorbar(scatter)
     plt.xlabel("潜空间维度 1")
     plt.ylabel("潜空间维度 2")
     plt.title("ConvAE 2D 潜空间分布")
@@ -113,12 +112,13 @@ def plot_latent_space(encoder, test_loader):
     plt.show()
 
 
-# ===================== 训练 =====================
+# ===================== 主程序 =====================
 if __name__ == "__main__":
     model = ConvAutoEncoder().to(device)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
     criterion = nn.MSELoss()
 
+    # ==================== 训练 ====================
     print("🚀 开始训练 ConvAE...")
     for epoch in range(EPOCHS):
         model.train()
@@ -131,13 +131,27 @@ if __name__ == "__main__":
             loss.backward()
             optimizer.step()
             total_loss += loss.item()
-        print(f"Epoch [{epoch+1}/{EPOCHS}]  Loss: {total_loss/len(train_loader):.6f}")
+        
+        avg_loss = total_loss / len(train_loader)
+        print(f"Epoch [{epoch+1}/{EPOCHS}]  Loss: {avg_loss:.6f}")
 
     print("\n✅ 训练完成！")
 
-    # 可视化
+    # ==================== 保存模型 ====================
+    torch.save({
+        'model_state_dict': model.state_dict(),
+        'optimizer_state_dict': optimizer.state_dict(),
+        'epoch': EPOCHS,
+        'latent_dim': LATENT_DIM
+    }, MODEL_PATH)
+    
+    print(f"✅ 模型已保存到: {MODEL_PATH}")
+
+    # ==================== 可视化 ====================
+    print("\n📊 可视化重建结果...")
     plot_reconstructions(model, test_loader)
+    
+    print("\n📈 可视化 2D 潜空间...")
     plot_latent_space(model.get_encoder(), test_loader)
 
-    # torch.save(model.state_dict(), "conv_autoencoder_mnist.pth")
-    print("\n🎉 ConvAE 运行完毕！")
+    print("\n🎉 ConvAE 训练与保存完成！")

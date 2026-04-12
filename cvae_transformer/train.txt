@@ -1,0 +1,107 @@
+使用设备: cuda
+
+模型初始化完成，开始训练...
+
+Epoch [ 1/100]  Loss: 142233.8415  Acc: 34.30%
+Epoch [ 2/100]  Loss: 113128.1545  Acc: 63.74%
+Epoch [ 3/100]  Loss: 104326.2504  Acc: 71.61%
+Epoch [ 4/100]  Loss: 100011.2297  Acc: 74.34%
+Epoch [ 5/100]  Loss: 97550.0934  Acc: 77.67%
+Epoch [ 6/100]  Loss: 95845.0552  Acc: 80.26%
+Epoch [ 7/100]  Loss: 94840.7416  Acc: 81.59%
+Epoch [ 8/100]  Loss: 94067.5503  Acc: 82.55%
+Epoch [ 9/100]  Loss: 93507.6965  Acc: 83.60%
+Epoch [10/100]  Loss: 93095.7936  Acc: 84.14%
+Epoch [11/100]  Loss: 92768.6240  Acc: 84.44%
+Epoch [12/100]  Loss: 92451.0690  Acc: 84.64%
+Epoch [13/100]  Loss: 92211.4613  Acc: 85.13%
+Epoch [14/100]  Loss: 92009.2553  Acc: 85.55%
+Epoch [15/100]  Loss: 91857.3189  Acc: 85.75%
+Epoch [16/100]  Loss: 91720.9191  Acc: 86.28%
+Epoch [17/100]  Loss: 91579.8884  Acc: 86.52%
+Epoch [18/100]  Loss: 91476.0409  Acc: 86.97%
+Epoch [19/100]  Loss: 91370.9923  Acc: 87.17%
+Epoch [20/100]  Loss: 91294.0362  Acc: 87.32%
+Epoch [21/100]  Loss: 91223.4359  Acc: 87.74%
+Epoch [22/100]  Loss: 91159.2449  Acc: 87.77%
+Epoch [23/100]  Loss: 91104.7807  Acc: 88.08%
+Epoch [24/100]  Loss: 91046.5966  Acc: 88.36%
+Epoch [25/100]  Loss: 90996.0314  Acc: 88.60%
+Epoch [26/100]  Loss: 90957.9395  Acc: 88.92%
+Epoch [27/100]  Loss: 90920.6657  Acc: 89.17%
+Epoch [28/100]  Loss: 90883.8656  Acc: 89.22%
+Epoch [29/100]  Loss: 90849.4194  Acc: 89.67%
+Epoch [30/100]  Loss: 90818.3349  Acc: 89.74%
+Epoch [31/100]  Loss: 90805.6131  Acc: 89.97%
+Epoch [32/100]  Loss: 90783.2305  Acc: 90.36%
+Epoch [33/100]  Loss: 90752.5789  Acc: 90.23%
+Epoch [34/100]  Loss: 90747.6378  Acc: 90.34%
+Epoch [35/100]  Loss: 90709.8314  Acc: 90.89%
+Epoch [36/100]  Loss: 90699.4490  Acc: 90.94%
+Epoch [37/100]  Loss: 90686.1855  Acc: 91.12%
+Epoch [38/100]  Loss: 90659.9350  Acc: 91.47%
+Epoch [39/100]  Loss: 90641.5926  Acc: 91.45%
+Epoch [40/100]  Loss: 90630.9924  Acc: 91.54%
+Epoch [41/100]  Loss: 90618.5305  Acc: 91.93%
+Epoch [42/100]  Loss: 90603.7924  Acc: 92.24%
+Epoch [43/100]  Loss: 90590.4673  Acc: 92.59%
+Epoch [44/100]  Loss: 90577.3404  Acc: 92.28%
+Epoch [45/100]  Loss: 90567.1058  Acc: 92.81%
+Epoch [46/100]  Loss: 90552.6599  Acc: 92.86%
+Epoch [47/100]  Loss: 90547.0544  Acc: 93.08%
+Epoch [48/100]  Loss: 90537.0520  Acc: 93.19%
+Epoch [49/100]  Loss: 90529.2396  Acc: 93.56%
+Epoch [50/100]  Loss: 90521.9565  Acc: 93.47%
+Epoch [51/100]  Loss: 90513.9603  Acc: 93.62%
+Epoch [52/100]  Loss: 90493.1689  Acc: 93.96%
+Epoch [53/100]  Loss: 90488.2014  Acc: 93.94%
+Epoch [54/100]  Loss: 90479.6988  Acc: 94.28%
+Epoch [55/100]  Loss: 90472.1822  Acc: 94.50%
+Epoch [56/100]  Loss: 90474.9513  Acc: 94.36%
+Epoch [57/100]  Loss: 90474.5652  Acc: 94.63%
+Epoch [58/100]  Loss: 90456.5216  Acc: 94.84%
+Epoch [59/100]  Loss: 90444.8503  Acc: 94.91%
+Epoch [60/100]  Loss: 90437.2139  Acc: 95.19%
+Epoch [61/100]  Loss: 90430.8069  Acc: 95.28%
+Epoch [62/100]  Loss: 90427.1665  Acc: 95.17%
+Epoch [63/100]  Loss: 90425.2017  Acc: 95.53%
+Epoch [64/100]  Loss: 90416.6167  Acc: 95.64%
+Epoch [65/100]  Loss: 90407.8341  Acc: 95.61%
+Epoch [66/100]  Loss: 90399.8314  Acc: 95.77%
+Epoch [67/100]  Loss: 90399.4237  Acc: 96.03%
+Epoch [68/100]  Loss: 90390.5293  Acc: 95.97%
+Epoch [69/100]  Loss: 90389.6176  Acc: 95.92%
+Epoch [70/100]  Loss: 90385.8105  Acc: 96.10%
+Epoch [71/100]  Loss: 90372.5728  Acc: 96.44%
+Epoch [72/100]  Loss: 90376.9279  Acc: 96.38%
+Epoch [73/100]  Loss: 90364.2893  Acc: 96.53%
+Epoch [74/100]  Loss: 90359.5416  Acc: 96.76%
+Epoch [75/100]  Loss: 90359.9071  Acc: 96.86%
+Epoch [76/100]  Loss: 90356.4425  Acc: 96.80%
+Epoch [77/100]  Loss: 90346.7952  Acc: 96.90%
+Epoch [78/100]  Loss: 90340.8201  Acc: 97.04%
+Epoch [79/100]  Loss: 90343.9643  Acc: 97.17%
+Epoch [80/100]  Loss: 90334.0438  Acc: 97.20%
+Epoch [81/100]  Loss: 90333.1360  Acc: 97.20%
+Epoch [82/100]  Loss: 90331.0734  Acc: 97.43%
+Epoch [83/100]  Loss: 90327.6913  Acc: 97.44%
+Epoch [84/100]  Loss: 90323.9209  Acc: 97.53%
+Epoch [85/100]  Loss: 90318.1991  Acc: 97.60%
+Epoch [86/100]  Loss: 90314.3072  Acc: 97.72%
+Epoch [87/100]  Loss: 90316.1440  Acc: 97.74%
+Epoch [88/100]  Loss: 90306.4100  Acc: 97.87%
+Epoch [89/100]  Loss: 90304.5938  Acc: 97.97%
+Epoch [90/100]  Loss: 90298.0544  Acc: 97.98%
+Epoch [91/100]  Loss: 90293.4431  Acc: 98.18%
+Epoch [92/100]  Loss: 90294.3309  Acc: 98.03%
+Epoch [93/100]  Loss: 90294.7992  Acc: 97.97%
+Epoch [94/100]  Loss: 90293.0961  Acc: 98.14%
+Epoch [95/100]  Loss: 90279.7471  Acc: 98.36%
+Epoch [96/100]  Loss: 90274.3130  Acc: 98.38%
+Epoch [97/100]  Loss: 90280.6736  Acc: 98.25%
+Epoch [98/100]  Loss: 90278.7456  Acc: 98.34%
+Epoch [99/100]  Loss: 90268.6923  Acc: 98.44%
+Epoch [100/100]  Loss: 90266.6525  Acc: 98.49%
+
+训练完成！
+模型已保存到: pth\cvae_transformer_fashionmnist_202604121758.pth
