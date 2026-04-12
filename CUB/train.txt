@@ -1,0 +1,17 @@
+使用设备: cuda
+
+开始在 CUB-200-2011 上训练 ConvVAE + Transformer 分类器...
+
+Epoch [ 1/50]  Loss: 229316.6793  Acc: 0.47%
+Epoch [ 2/50]  Loss: 196440.4443  Acc: 0.42%
+Epoch [ 3/50]  Loss: 187954.9351  Acc: 0.37%
+Epoch [ 4/50]  Loss: 181084.3768  Acc: 0.40%
+Epoch [ 5/50]  Loss: 176177.7271  Acc: 0.45%
+Epoch [ 6/50]  Loss: 173588.6690  Acc: 0.43%
+Epoch [ 7/50]  Loss: 171413.6017  Acc: 0.37%
+Epoch [ 8/50]  Loss: 169770.1153  Acc: 0.50%
+Epoch [ 9/50]  Loss: 168295.6462  Acc: 0.75%
+Epoch [10/50]  Loss: 166910.0923  Acc: 0.75%
+Epoch [11/50]  Loss: 165864.4440  Acc: 0.70%
+Epoch [12/50]  Loss: 164940.8826  Acc: 0.77%
+Epoch [13/50]  Loss: 164107.2789  Acc: 0.80%

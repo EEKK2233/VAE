@@ -1,0 +1,47 @@
+1. 混淆矩阵 (Confusion Matrix) 
+这张图展示了模型在 10 个类别上具体的预测情况（每行 = 真实类别，每列 = 预测类别）。
+关键观察：
+
+对角线上的数字是正确分类的数量（越高越好）。
+Trouser（裤子）：969 正确（非常好）
+Sandal（凉鞋）：947 正确（很好）
+Bag（包）：971 正确（很好）
+Ankle boot（短靴）：955 正确（很好）
+Sneaker（运动鞋）：958 正确（很好）
+
+严重问题类别：
+Shirt（衬衫）：真实 1000 张，只有 683 被正确预测为 Shirt，其余大量被错分为：
+T-shirt/top（130 张）
+Coat（75 张）
+Pullover（74 张）
+→ Shirt 是当前模型最差的类别，F1 分数只有 0.13 左右，几乎失效。
+
+Pullover（套头衫）：只有 815 正确，很多被错分为 Coat、Dress 等。
+Coat（外套）：只有 823 正确。
+
+
+总结：模型在裤子、鞋子、包这类轮廓鲜明的类别上表现很好，但在上衣类（T-shirt、Shirt、Pullover、Coat、Dress）上混淆非常严重，尤其是 Shirt 几乎被“淹没”了。
+
+
+
+
+2. PR 曲线 (Precision-Recall Curve)
+这张图反映了模型在不同召回率下的精确率表现。
+
+大多数类别（Trouser、Sandal、Bag、Ankle boot 等）的 AP（Average Precision）都在 0.99 左右，曲线非常靠近左上角，说明这些类别模型表现优秀。
+Shirt（粉色曲线） 的 AP 只有 0.788，曲线明显低于其他类别，下降得很快，说明模型对 Shirt 的预测置信度低且不稳定。
+Pullover、Coat 的曲线也相对较低。
+
+结论：PR 曲线再次确认 Shirt 是最大的弱点，其他上衣类也表现一般。
+
+
+
+
+3. ROC 曲线 (Receiver Operating Characteristic)
+ROC 曲线显示模型区分正例和负例的能力（One-vs-Rest 方式）。
+
+大部分类别的 AUC 都在 0.98~0.999，非常高，说明模型整体区分能力还不错。
+Shirt（粉色曲线） 的 AUC 是 0.963，是所有类别中最低的，但仍然不算差。
+整体来看，ROC 曲线表现比 PR 曲线好，因为 ROC 对类别不平衡不敏感，而 PR 更能反映实际困难类别的表现。
+
+

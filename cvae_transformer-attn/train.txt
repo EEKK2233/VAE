@@ -1,0 +1,137 @@
+ʹ���豸: cuda | GPU: RTX 4060 8GB
+
+ģ�ͳ�ʼ����ɣ���ʼ���׶�ѵ��...
+
+=== �׶�1��VAE Ԥѵ�����ؽ�Ϊ���� ===
+VAE Epoch [ 1/40]  Loss: 1084269.78  ��=0.00000
+VAE Epoch [ 2/40]  Loss: 975900.71  ��=0.00007
+VAE Epoch [ 3/40]  Loss: 905468.31  ��=0.00013
+VAE Epoch [ 4/40]  Loss: 858041.87  ��=0.00020
+VAE Epoch [ 5/40]  Loss: 814059.45  ��=0.00027
+VAE Epoch [ 6/40]  Loss: 774483.57  ��=0.00033
+VAE Epoch [ 7/40]  Loss: 739411.55  ��=0.00040
+VAE Epoch [ 8/40]  Loss: 708230.49  ��=0.00047
+VAE Epoch [ 9/40]  Loss: 668722.25  ��=0.00053
+VAE Epoch [10/40]  Loss: 615005.28  ��=0.00060
+VAE Epoch [11/40]  Loss: 586526.23  ��=0.00067
+VAE Epoch [12/40]  Loss: 566210.94  ��=0.00073
+VAE Epoch [13/40]  Loss: 550301.47  ��=0.00080
+VAE Epoch [14/40]  Loss: 537484.15  ��=0.00087
+VAE Epoch [15/40]  Loss: 526843.83  ��=0.00093
+VAE Epoch [16/40]  Loss: 517706.22  ��=0.00100
+VAE Epoch [17/40]  Loss: 510008.95  ��=0.00100
+VAE Epoch [18/40]  Loss: 503552.20  ��=0.00100
+VAE Epoch [19/40]  Loss: 498242.59  ��=0.00100
+VAE Epoch [20/40]  Loss: 493849.29  ��=0.00100
+VAE Epoch [21/40]  Loss: 490196.02  ��=0.00100
+VAE Epoch [22/40]  Loss: 487130.05  ��=0.00100
+VAE Epoch [23/40]  Loss: 484501.82  ��=0.00100
+VAE Epoch [24/40]  Loss: 481837.13  ��=0.00100
+VAE Epoch [25/40]  Loss: 479745.62  ��=0.00100
+VAE Epoch [26/40]  Loss: 478049.14  ��=0.00100
+VAE Epoch [27/40]  Loss: 476621.52  ��=0.00100
+VAE Epoch [28/40]  Loss: 475398.77  ��=0.00100
+VAE Epoch [29/40]  Loss: 474306.56  ��=0.00100
+VAE Epoch [30/40]  Loss: 473411.63  ��=0.00100
+VAE Epoch [31/40]  Loss: 472610.02  ��=0.00100
+VAE Epoch [32/40]  Loss: 471913.33  ��=0.00100
+VAE Epoch [33/40]  Loss: 471279.27  ��=0.00100
+VAE Epoch [34/40]  Loss: 470743.72  ��=0.00100
+VAE Epoch [35/40]  Loss: 470228.91  ��=0.00100
+VAE Epoch [36/40]  Loss: 469837.80  ��=0.00100
+VAE Epoch [37/40]  Loss: 469446.25  ��=0.00100
+VAE Epoch [38/40]  Loss: 469109.81  ��=0.00100
+VAE Epoch [39/40]  Loss: 468812.66  ��=0.00100
+VAE Epoch [40/40]  Loss: 468644.17  ��=0.00100
+VAE Ԥѵ����ɣ���ʼ�׶�2����΢��...
+
+=== �׶�2��VAE + Classifier ����΢�� ===
+Finetune Epoch [ 1/60]  Loss: 17477.8951  TrainAcc: 40.46%  ValAcc: 61.68%
+�� �����ģ���ѱ��棡Val Acc: 61.68%
+Finetune Epoch [ 2/60]  Loss: 17468.3580  TrainAcc: 66.30%  ValAcc: 75.28%
+�� �����ģ���ѱ��棡Val Acc: 75.28%
+Finetune Epoch [ 3/60]  Loss: 17457.5052  TrainAcc: 74.73%  ValAcc: 76.28%
+�� �����ģ���ѱ��棡Val Acc: 76.28%
+Finetune Epoch [ 4/60]  Loss: 17444.7927  TrainAcc: 77.01%  ValAcc: 78.38%
+�� �����ģ���ѱ��棡Val Acc: 78.38%
+Finetune Epoch [ 5/60]  Loss: 17430.0365  TrainAcc: 78.14%  ValAcc: 78.80%
+�� �����ģ���ѱ��棡Val Acc: 78.80%
+Finetune Epoch [ 6/60]  Loss: 17416.8984  TrainAcc: 78.96%  ValAcc: 79.42%
+�� �����ģ���ѱ��棡Val Acc: 79.42%
+Finetune Epoch [ 7/60]  Loss: 17401.5244  TrainAcc: 80.33%  ValAcc: 80.98%
+�� �����ģ���ѱ��棡Val Acc: 80.98%
+Finetune Epoch [ 8/60]  Loss: 17390.2650  TrainAcc: 80.97%  ValAcc: 81.82%
+�� �����ģ���ѱ��棡Val Acc: 81.82%
+Finetune Epoch [ 9/60]  Loss: 17381.0962  TrainAcc: 81.66%  ValAcc: 81.63%
+Finetune Epoch [10/60]  Loss: 17369.4414  TrainAcc: 82.42%  ValAcc: 82.18%
+�� �����ģ���ѱ��棡Val Acc: 82.18%
+Finetune Epoch [11/60]  Loss: 17361.5511  TrainAcc: 82.77%  ValAcc: 81.87%
+Finetune Epoch [12/60]  Loss: 17354.7625  TrainAcc: 82.97%  ValAcc: 82.42%
+�� �����ģ���ѱ��棡Val Acc: 82.42%
+Finetune Epoch [13/60]  Loss: 17346.9279  TrainAcc: 83.30%  ValAcc: 83.87%
+�� �����ģ���ѱ��棡Val Acc: 83.87%
+Finetune Epoch [14/60]  Loss: 17340.2562  TrainAcc: 83.75%  ValAcc: 83.00%
+Finetune Epoch [15/60]  Loss: 17333.5007  TrainAcc: 84.32%  ValAcc: 84.30%
+�� �����ģ���ѱ��棡Val Acc: 84.30%
+Finetune Epoch [16/60]  Loss: 17328.7910  TrainAcc: 84.29%  ValAcc: 84.02%
+Finetune Epoch [17/60]  Loss: 17323.8560  TrainAcc: 84.77%  ValAcc: 84.07%
+Finetune Epoch [18/60]  Loss: 17319.9694  TrainAcc: 85.00%  ValAcc: 84.28%
+Finetune Epoch [19/60]  Loss: 17316.3334  TrainAcc: 85.39%  ValAcc: 84.58%
+�� �����ģ���ѱ��棡Val Acc: 84.58%
+Finetune Epoch [20/60]  Loss: 17313.9178  TrainAcc: 85.54%  ValAcc: 85.03%
+�� �����ģ���ѱ��棡Val Acc: 85.03%
+Finetune Epoch [21/60]  Loss: 17309.4601  TrainAcc: 85.92%  ValAcc: 84.63%
+Finetune Epoch [22/60]  Loss: 17307.4450  TrainAcc: 85.92%  ValAcc: 85.33%
+�� �����ģ���ѱ��棡Val Acc: 85.33%
+Finetune Epoch [23/60]  Loss: 17304.6986  TrainAcc: 86.22%  ValAcc: 85.27%
+Finetune Epoch [24/60]  Loss: 17301.3056  TrainAcc: 86.30%  ValAcc: 85.47%
+�� �����ģ���ѱ��棡Val Acc: 85.47%
+Finetune Epoch [25/60]  Loss: 17299.8244  TrainAcc: 86.61%  ValAcc: 85.62%
+�� �����ģ���ѱ��棡Val Acc: 85.62%
+Finetune Epoch [26/60]  Loss: 17297.6736  TrainAcc: 86.82%  ValAcc: 86.10%
+�� �����ģ���ѱ��棡Val Acc: 86.10%
+Finetune Epoch [27/60]  Loss: 17294.8845  TrainAcc: 87.03%  ValAcc: 86.13%
+�� �����ģ���ѱ��棡Val Acc: 86.13%
+Finetune Epoch [28/60]  Loss: 17289.1056  TrainAcc: 87.09%  ValAcc: 85.88%
+Finetune Epoch [29/60]  Loss: 17288.6614  TrainAcc: 87.47%  ValAcc: 87.03%
+�� �����ģ���ѱ��棡Val Acc: 87.03%
+Finetune Epoch [30/60]  Loss: 17286.3583  TrainAcc: 87.46%  ValAcc: 86.38%
+Finetune Epoch [31/60]  Loss: 17284.4064  TrainAcc: 87.79%  ValAcc: 86.48%
+Finetune Epoch [32/60]  Loss: 17284.8579  TrainAcc: 88.10%  ValAcc: 86.13%
+Finetune Epoch [33/60]  Loss: 17283.2195  TrainAcc: 88.20%  ValAcc: 86.70%
+Finetune Epoch [34/60]  Loss: 17282.3890  TrainAcc: 88.25%  ValAcc: 86.75%
+Finetune Epoch [35/60]  Loss: 17281.4486  TrainAcc: 88.59%  ValAcc: 87.03%
+Finetune Epoch [36/60]  Loss: 17280.7648  TrainAcc: 88.79%  ValAcc: 86.98%
+Finetune Epoch [37/60]  Loss: 17279.5512  TrainAcc: 88.84%  ValAcc: 86.82%
+Finetune Epoch [38/60]  Loss: 17278.6740  TrainAcc: 88.97%  ValAcc: 86.78%
+Finetune Epoch [39/60]  Loss: 17277.7847  TrainAcc: 89.20%  ValAcc: 87.38%
+�� �����ģ���ѱ��棡Val Acc: 87.38%
+Finetune Epoch [40/60]  Loss: 17277.0273  TrainAcc: 89.18%  ValAcc: 87.18%
+Finetune Epoch [41/60]  Loss: 17277.9710  TrainAcc: 89.35%  ValAcc: 87.40%
+�� �����ģ���ѱ��棡Val Acc: 87.40%
+Finetune Epoch [42/60]  Loss: 17276.0876  TrainAcc: 89.51%  ValAcc: 87.38%
+Finetune Epoch [43/60]  Loss: 17274.5571  TrainAcc: 89.53%  ValAcc: 87.27%
+Finetune Epoch [44/60]  Loss: 17275.1412  TrainAcc: 89.80%  ValAcc: 87.62%
+�� �����ģ���ѱ��棡Val Acc: 87.62%
+Finetune Epoch [45/60]  Loss: 17274.3756  TrainAcc: 89.72%  ValAcc: 87.37%
+Finetune Epoch [46/60]  Loss: 17273.1660  TrainAcc: 89.99%  ValAcc: 87.48%
+Finetune Epoch [47/60]  Loss: 17272.7454  TrainAcc: 90.17%  ValAcc: 87.57%
+Finetune Epoch [48/60]  Loss: 17272.3642  TrainAcc: 90.14%  ValAcc: 87.33%
+Finetune Epoch [49/60]  Loss: 17273.4904  TrainAcc: 90.39%  ValAcc: 87.83%
+�� �����ģ���ѱ��棡Val Acc: 87.83%
+Finetune Epoch [50/60]  Loss: 17270.6844  TrainAcc: 90.33%  ValAcc: 88.17%
+�� �����ģ���ѱ��棡Val Acc: 88.17%
+Finetune Epoch [51/60]  Loss: 17271.3854  TrainAcc: 90.48%  ValAcc: 87.48%
+Finetune Epoch [52/60]  Loss: 17270.9960  TrainAcc: 90.55%  ValAcc: 87.85%
+Finetune Epoch [53/60]  Loss: 17270.2566  TrainAcc: 90.41%  ValAcc: 87.52%
+Finetune Epoch [54/60]  Loss: 17269.9891  TrainAcc: 90.66%  ValAcc: 87.82%
+Finetune Epoch [55/60]  Loss: 17269.7185  TrainAcc: 90.66%  ValAcc: 87.93%
+Finetune Epoch [56/60]  Loss: 17269.6380  TrainAcc: 90.68%  ValAcc: 87.72%
+Finetune Epoch [57/60]  Loss: 17269.6570  TrainAcc: 90.72%  ValAcc: 87.77%
+Finetune Epoch [58/60]  Loss: 17269.3799  TrainAcc: 90.76%  ValAcc: 88.18%
+�� �����ģ���ѱ��棡Val Acc: 88.18%
+Finetune Epoch [59/60]  Loss: 17269.4094  TrainAcc: 90.86%  ValAcc: 87.80%
+Finetune Epoch [60/60]  Loss: 17269.1927  TrainAcc: 90.67%  ValAcc: 87.77%
+
+ѵ��ȫ����ɣ�
+�����֤׼ȷ��: 88.18%
