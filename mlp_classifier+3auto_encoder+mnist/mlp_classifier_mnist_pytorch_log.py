@@ -30,9 +30,9 @@ plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 
 # ==================== 导入编码器 ====================
-from autoencoder_mnist_pytorch import AutoEncoder
-from conv_autoencoder_mnist_pytorch import ConvAutoEncoder
-from vae_mnist_pytorch import VAE
+from three_kinds_autoencoder.autoencoder_mnist_pytorch import AutoEncoder
+from three_kinds_autoencoder.conv_autoencoder_mnist_pytorch import ConvAutoEncoder
+from three_kinds_autoencoder.vae_mnist_pytorch import VAE
 
 # ==================== 全局设置 ====================
 torch.manual_seed(42)
