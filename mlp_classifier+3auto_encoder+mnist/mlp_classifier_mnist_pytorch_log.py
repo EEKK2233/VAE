@@ -11,6 +11,10 @@ import torchvision.transforms as transforms
 # 导入日志模块（完全模仿你的自编码器代码）
 import logging
 
+# 自动添加 当前目录(./) 和 上级目录(../) 到Python搜索路径
+sys.path.append(os.path.abspath("."))   # 兼容 ./
+sys.path.append(os.path.abspath(".."))  # 兼容 ../
+
 sys.stdout.reconfigure(encoding='utf-8')
 
 # ==================== 日志配置（与自编码器代码完全一致） ====================
