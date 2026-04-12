@@ -71,14 +71,20 @@ project/
 ├── three_kinds_auto_encoder/                   # 阶段一：3 种自编码器对比学习（AE · ConvAE · VAE）
 ├── mlp_classifier+3auto_encoder+mnist/         # 阶段二：MLP 分类器，在 MNIST 数据集上训练 + 测试
 ├── transformer_classifier+3auto_encoder+mnist/ # 阶段二：Transformer 分类器，在 MNIST 数据集上训练 + 测试
-├── cvae_transformer/                           # 阶段二最强模型：CVAE 编码器 + Transformer 分类器，在 FashionMNIST 数据集上训练 + 测试
-├── CUB/                                        # 使用阶段二最强模型在 CUB 数据集上测试
+├── cvae_transformer/                           # 阶段二最优搭配：CVAE 编码器 + Transformer 分类器，在 FashionMNIST 数据集上训练 + 测试
+├── cvae_transformer-attn/                      # 在原本 cvae_transformer 的基础上加上注意力机制
+├── CUB/                                        # 使用 cvae_transformer-attn 在 CUB 数据集上测试
 └── README.md                                   # 项目说明文档
 ```
 
 ```powershell
 # 上面的文件树是对整个项目的介绍
-# 本文件树聚焦于实验结果的保存
+# 本文件树聚焦于实验结果（测试结果）的保存
+project/
+├── mlp_classifier+3auto_encoder+mnist/mlp_classifier_mnist_pytorch.log                 # 阶段二的一个结果
+├── transformer_classifier+3auto_encoder+mnist/transformer_classifier_mnist_pytorch.log # 阶段二的一个结果
+├── cvae_transformer/result/            # 阶段二 cvae_transformer 在 FashionMNIST 数据集上训练的结果
+└── cvae_transformer-attn/result/       # 阶段三 cvae_transformer 在 FashionMNIST 数据集上训练的结果
 ```
 
 
