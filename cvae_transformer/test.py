@@ -23,6 +23,9 @@ if sys.platform.startswith('win'):
     import codecs
     sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'replace')
 
+plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['axes.unicode_minus'] = False
+
 # ===================== 导入模型定义 =====================
 from models import ConvVAE, TransformerClassifier
 

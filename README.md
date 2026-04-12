@@ -66,15 +66,19 @@ flowchart TD
 
 
 ## 📁 项目文件结构
+```powershell
+project/
+├── three_kinds_auto_encoder/                   # 阶段一：3 种自编码器对比学习（AE · ConvAE · VAE）
+├── mlp_classifier+3auto_encoder+mnist/         # 阶段二：MLP 分类器，在 MNIST 数据集上训练 + 测试
+├── transformer_classifier+3auto_encoder+mnist/ # 阶段二：Transformer 分类器，在 MNIST 数据集上训练 + 测试
+├── cvae_transformer/                           # 阶段二最强模型：CVAE 编码器 + Transformer 分类器，在 FashionMNIST 数据集上训练 + 测试
+├── CUB/                                        # 使用阶段二最强模型在 CUB 数据集上测试
+└── README.md                                   # 项目说明文档
 ```
-├── autoencoder_mnist_pytorch.py          # 全连接自编码器（AE）
-├── conv_autoencoder_mnist_pytorch.py     # 卷积自编码器（ConvAE）
-├── vae_mnist_pytorch.py                  # 变分自编码器（VAE）
-├── mlp_classifier_mnist_pytorch.py       # MLP 分类器（复用预训练编码器）
-├── transformer_classifier_mnist_pytorch.py # Transformer 分类器
-├── cvae_transformer_classifier.py        # CVAE + Transformer + 注意力增强完整模型
-├── mlp_classifier_mnist_pytorch_log.py   # 带日志输出的分类器
-├── README.md                             # 项目说明文档
+
+```powershell
+# 上面的文件树是对整个项目的介绍
+# 本文件树聚焦于实验结果的保存
 ```
 
 
