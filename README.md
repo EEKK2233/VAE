@@ -84,7 +84,7 @@ project/
 ├── mlp_classifier+3auto_encoder+mnist/mlp_classifier_mnist_pytorch.log                 # 阶段二的一个结果
 ├── transformer_classifier+3auto_encoder+mnist/transformer_classifier_mnist_pytorch.log # 阶段二的一个结果
 ├── cvae_transformer/result/            # 阶段二 cvae_transformer 在 FashionMNIST 数据集上训练的结果
-└── cvae_transformer-attn/result/       # 阶段三 cvae_transformer 在 FashionMNIST 数据集上训练的结果
+└── cvae_transformer-attn/result/       # 阶段三 cvae_transformer-attn 在 FashionMNIST 数据集上训练的结果
 ```
 
 
